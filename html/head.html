@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 定义页面的编码方式 -->
+    <meta charset="UTF-8">
+    <!-- viewport 为可视区域，它的宽度为设备的宽度 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- http-equiv 表示执行一个命令，下面设置 HTTP 的 content-type -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 页面的描述信息，可供搜索引擎显示 -->
+    <meta name="description"content="前端打卡小课">
+    <title>Document</title>
+    <script>
+            window.onload = function() {
+              console.log('window loaded');
+            }
+    </script>
+     <style>
+            body {
+                height: 1000px;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .top {
+                position: fixed;
+                z-index: 1000;
+                background-color: cornflowerblue;
+                height: 64px;
+                width: 100%;
+                color: white;
+                font-size: 30px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .con {
+                background-color: #F1F1F1;
+                height: auto;
+                width: 100%;
+            }
+            .icon {
+                position: relative;
+                top: 20px;
+                left: 20px;
+                background-color: aquamarine;
+                height: 80px;
+                width: 80px;
+            }
+             .title {
+                position: relative;
+                left: 120px;
+                top: -50px;
+                font-size: 20px;
+                color: black;
+                background-color: bisque;
+                width: 50%;
+            } 
+            .des {
+                position: relative;
+                left: 120px;
+                top: -40px;
+                font-size: 16px;
+                color: #666;
+                width: 50%;
+                background-color: palegreen;
+            }
+           
+            .time {
+                position: absolute;
+                right: 10px;
+                top: 30px;
+                width: 40px;
+                font-size: 16px;
+                color: #666;
+                background-color: blue;
+            } 
+    </style>
+
+</head>
+<body>
+        <div class="con">
+                <div class="icon"></div>
+                <div class="title">File Transfer</div>
+                <div class="des">position布局</div>
+                <div class="time">10:00</div>
+        </div>
+        <div class="div1"></div>
+</body>
+</html>
+
+
