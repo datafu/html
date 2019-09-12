@@ -1,0 +1,51 @@
+p {
+    color: red;
+}
+
+.first {
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+#second {
+    color: blue;
+}
+
+/* 通用选择器（Universal selector）：单独一个“ * ”，作用于所有的标签 */
+* {
+    margin: 0 ;
+    padding: 0;
+}
+
+/* 属性选择器（Attribute selectors）：根据属性来匹配HTML元素 */
+[left]{
+    color: green;
+}
+
+/* 伪选择器（pseudo-selectors）：  匹配超链接样式 */
+a {
+    color: blue;
+    font-weight: bold;
+}
+
+/* 访问后的状态 */
+a:visited {
+    color: yellow;
+}
+
+/* div p {
+    color: yellow;
+} */
+
+div > p {
+    color: cornflowerblue;
+}
+
+@media (min-width: 801px) {
+    #big {
+      color: green;
+    }
+  }
+
+
+
